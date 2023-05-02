@@ -79,7 +79,7 @@ const GlobalNav: FC<GlobalNavProps> = ({
                   return onClick ? (
                     buttonNode
                   ) : (
-                    <Link to={to} className={styles.navButton}>
+                    <Link to={to} className={styles.navButton} key={iconURL}>
                       {buttonNode}
                     </Link>
                   )

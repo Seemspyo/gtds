@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { FC, PropsWithChildren, useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 import { Box } from '@/components/box'
 import { IconButton } from '@/components/button'
@@ -9,6 +9,11 @@ import styles from './GlobalLayout.module.scss'
 
 const GlobalLayout: FC<PropsWithChildren> = ({ children }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setIsNavOpen(false)
+  }, [location.key])
 
   return (
     <div className={styles.container}>
