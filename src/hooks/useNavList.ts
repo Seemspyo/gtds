@@ -37,17 +37,24 @@ export const useNavList = () => {
       },
       {
         iconURL: 'assets/images/rank.png',
-        iconAlt: '레이드',
+        iconAlt: '때려잡기',
         title: '레이드 순위',
         backgroundImageURL: 'assets/images/rank-bg.webp',
         to: '/ranks',
       },
       {
         iconURL: 'assets/images/vacation.png',
-        iconAlt: '휴가',
+        iconAlt: '안녕',
         title: '휴가 현황표',
         backgroundImageURL: 'assets/images/vacation-bg.webp',
         to: '/attendance',
+      },
+      {
+        iconURL: 'assets/images/raid-history.png',
+        iconAlt: '보스',
+        title: '레이드 일지',
+        backgroundImageURL: 'assets/images/raid-history-bg.webp',
+        to: '/raid-histories',
       },
     ]
   }

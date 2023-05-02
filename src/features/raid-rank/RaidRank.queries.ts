@@ -4,7 +4,7 @@ import { getRaidHistories } from '@/api/core/raid'
 
 export const useRaidRankListQuery = () => {
   return useQuery({
-    queryKey: ['RaidRank__raidRankList'],
+    queryKey: ['getRaidHistories'],
     queryFn: getRaidHistories,
     placeholderData: [],
   })

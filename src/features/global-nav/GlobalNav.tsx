@@ -1,10 +1,10 @@
+import { noop } from 'lodash-es'
 import { FC, MouseEventHandler, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Box, ContentBox } from '@/components/box'
 import { BlockButton, IconButton } from '@/components/button'
 import { useNavList } from '@/hooks/useNavList'
-import { noop } from '@/utils/noop'
 
 import styles from './GlobalNav.module.scss'
 

@@ -5,6 +5,7 @@ import { NotFound } from '@/components/not-found'
 import Attendance from './Attendance.page'
 import Home from './Home.page'
 import Main from './Main'
+import Raid from './Raid.page'
 import Rank from './Rank.page'
 
 export const routes: RouteObject[] = [
@@ -24,6 +25,10 @@ export const routes: RouteObject[] = [
       {
         path: '/attendance',
         element: <Attendance />,
+      },
+      {
+        path: '/raid-histories',
+        element: <Raid />,
       },
     ],
   },

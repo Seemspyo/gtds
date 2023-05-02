@@ -4,7 +4,7 @@ import { getRaidHistories } from '@/api/core/raid'
 
 export const useRecentRaidHistoryQuery = () => {
   return useQuery({
-    queryKey: ['RecentRaidRank__recentRaidHistory'],
+    queryKey: ['getRaidHistories'],
     queryFn: getRaidHistories,
     select: (data) => data.sort((a, b) => b.no.localeCompare(a.no)).at(0),
   })

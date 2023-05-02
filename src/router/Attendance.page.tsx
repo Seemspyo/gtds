@@ -1,7 +1,9 @@
 import { FC } from 'react'
 
+import { Vacation } from '@/features/vacation'
+
 const Attendance: FC = () => {
-  return <div>attendance!</div>
+  return <Vacation />
 }
 
 export default Attendance
