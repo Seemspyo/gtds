@@ -1,0 +1,23 @@
+{
+  "include": ["src"],
+  "exclude": ["dist"],
+  "lib": ["DOM", "DOM.Iterable", "ESNext"],
+  "compilerOptions": {
+    "strict": true,
+    "types": ["vite/client"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
