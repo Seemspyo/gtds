@@ -1,0 +1,260 @@
+[
+  {
+    "uid": "9MPXL",
+    "nickname": "검성",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-01-03"
+  },
+  {
+    "uid": "P6MRL",
+    "nickname": "고문영",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "W4NQL",
+    "nickname": "그리티",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "51QY1",
+    "nickname": "기사권민수",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-01-21"
+  },
+  {
+    "uid": "HLP5L",
+    "nickname": "김타루",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "R2VN1",
+    "nickname": "닭가슴살",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "VLP61",
+    "nickname": "댕댕이",
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-04-17"
+  },
+  {
+    "uid": "QHMUL",
+    "nickname": "련수",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-12-27"
+  },
+  {
+    "uid": "3HVUL",
+    "nickname": "륨키밀",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "6VYDB",
+    "nickname": "마리앙",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "8MVYX",
+    "nickname": "메이",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "73V71",
+    "nickname": "바스켓맨",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "3HVEL",
+    "nickname": "분홍신",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-03-23"
+  },
+  {
+    "uid": "A77LX",
+    "nickname": "사신",
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-02-05"
+  },
+  {
+    "uid": "3CLAL",
+    "nickname": "새우",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "9PUEX",
+    "nickname": "아바마마",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "7RG8X",
+    "nickname": "아이읔",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "7B01X",
+    "nickname": "암월",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "QXHUX",
+    "nickname": "어디서약을",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "GPTPL",
+    "nickname": "에어리얼",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "YHHUX",
+    "nickname": "엘풍",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-02-18"
+  },
+  {
+    "uid": "L24XL",
+    "nickname": "요술공주타릭",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "40HKX",
+    "nickname": "우주",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "WPEN1",
+    "nickname": "이스칸데르",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "AU67L",
+    "nickname": "일큐",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "ULX0X",
+    "nickname": "잼미니",
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-02-22"
+  },
+  {
+    "uid": "WPM5L",
+    "nickname": "주예수",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "GWKY1",
+    "nickname": "지금이니",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-02-18"
+  },
+  {
+    "uid": "83HP8",
+    "nickname": "축계정",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "RMTV1",
+    "nickname": "카페모카",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "3TG9L",
+    "nickname": "케빈12",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "3X2DB",
+    "nickname": "투루샹",
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-02-05"
+  },
+  {
+    "uid": "4T1GB",
+    "nickname": "티리엘",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "MNDU1",
+    "nickname": "파르가",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "XG7W1",
+    "nickname": "프롬",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "G54HL",
+    "nickname": "ArtRain",
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-02-07"
+  },
+  {
+    "uid": "PKV7X",
+    "nickname": "Dm",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "TPRML",
+    "nickname": "GrayWolf",
+    "status": "KICKED_ABSCENT",
+    "inactivatedAt": "2023-01-25"
+  },
+  {
+    "uid": "T3EG1",
+    "nickname": "GunAxe",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "EH9PL",
+    "nickname": "Mobb",
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-02-01"
+  },
+  {
+    "uid": "MPMBX",
+    "nickname": "ROKAPIA",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "1NHGX",
+    "nickname": "SummerYUI",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "LMMWX",
+    "nickname": "whiteblu",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  }
+]

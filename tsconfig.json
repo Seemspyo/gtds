@@ -13,7 +13,8 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "typeRoots": ["node_modules/@types"]
   },
   "references": [
     {

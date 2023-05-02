@@ -3,7 +3,6 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react-hooks', 'simple-import-sort'],
   extends: [
     'airbnb',
@@ -28,6 +27,13 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'import/prefer-default-export': 'off',
     'import/extensions': 'off',
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+      },
+    ],
+    'react/require-default-props': 'off',
   },
   overrides: [
     {

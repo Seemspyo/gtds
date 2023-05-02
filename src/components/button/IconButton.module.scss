@@ -1,0 +1,12 @@
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($brown-01, 0.8);
+  border: rgba($brown-03, 0.8) solid 1px;
+  padding: 2px;
+  color: $text-01;
+  box-shadow: 0 2px 0 0 $brown-02;
+  border-radius: 4px;
+  cursor: pointer;
+}

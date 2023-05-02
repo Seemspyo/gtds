@@ -1,0 +1,14 @@
+.box {
+  display: inline-flex;
+  background-color: $brown-01;
+  border-radius: 3px;
+  padding: 2px;
+  max-width: 100%;
+}
+
+.innerBox {
+  border: $brown-03 solid 2px;
+  border-radius: 3px;
+  padding: 4px 2px;
+  max-width: 100%;
+}

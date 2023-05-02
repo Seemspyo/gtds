@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  position: relative;
+
+  .mainTitle {
+    @extend %typo-05;
+
+    padding: 12px 0;
+    margin-top: 24px;
+  }
+
+  .recentAttendance {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    border: solid 1px $brown-03;
+
+    .backgroundImage {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .recentAttendanceContent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .contentTitle {
+        @extend %typo-06;
+      }
+
+      .contentList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 24px;
+        opacity: 0.9;
+
+        @extend %typo-01;
+      }
+    }
+  }
+
+  .vacationList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    list-style-type: none;
+  }
+
+  .vacationItem {
+    @extend %typo-01;
+
+    background-color: $brown-02;
+    border: solid 1px $brown-03;
+    padding: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+  .vacationCount {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: auto;
+    line-height: 160%;
+
+    b {
+      color: $text-03;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .vacationList {
+      grid-template-columns: 1fr;
+    }
+  }
+}
