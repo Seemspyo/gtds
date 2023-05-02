@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "name": "gtds",
-  "description": "가디언테일즈 Discovery 길드 홈페이지",
+  "description": "가디언 테일즈 Discovery 길드 홈페이지",
   "icons": {
     "60": "/assets/firefox_app_60x60.png",
     "128": "/assets/firefox_app_128x128.png",

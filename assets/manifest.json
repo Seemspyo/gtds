@@ -1,7 +1,7 @@
 {
   "name": "gtds",
   "short_name": "gtds",
-  "description": "가디언테일즈 Discovery 길드 홈페이지",
+  "description": "가디언 테일즈 Discovery 길드 홈페이지",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
