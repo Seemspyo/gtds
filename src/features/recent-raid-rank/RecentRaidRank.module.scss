@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+
+  .backgroundImage {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($brown-03, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contentTitle {
+      @extend %typo-01;
+    }
+
+    .contentSub {
+      @extend %typo-06;
+    }
+
+    .contentText {
+      @extend %typo-05;
+
+      font-size: 40px;
+      margin-top: 6px;
+      color: skyblue;
+    }
+  }
+}
