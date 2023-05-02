@@ -176,8 +176,8 @@
   {
     "uid": "RMTV1",
     "nickname": "카페모카",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-01-03"
   },
   {
     "uid": "3TG9L",
