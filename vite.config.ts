@@ -15,6 +15,16 @@ export default defineConfig(({ mode }) => {
   const envDir = resolve(__dirname, 'env')
   const env = loadEnv(mode, envDir)
   const isDev = env.VITE_USER_NODE_ENV === 'development'
+  const htmlPluginOptions = {
+    entry: isDev ? 'src/main.tsx' : resolve(__dirname, 'src/main.tsx'),
+    template: 'public/index.html',
+    filename: 'index.html',
+    injectOptions: {
+      data: {
+        title: '가디언 테일즈 Discovery 길드',
+      },
+    },
+  }
 
   return {
     mode: isDev ? 'development' : 'production',
@@ -44,13 +54,14 @@ export default defineConfig(({ mode }) => {
       createTsconfigPathsPluin(),
       createReactPlugin(),
       createHtmlPlugin({
-        entry: isDev ? 'src/main.tsx' : resolve(__dirname, 'src/main.tsx'),
-        template: 'public/index.html',
-        inject: {
-          data: {
-            title: '가디언 테일즈 Discovery 길드',
+        pages: [
+          htmlPluginOptions,
+          {
+            ...htmlPluginOptions,
+            filename: '404.html',
+            template: 'public/404.html',
           },
-        },
+        ],
       }),
       createFaviconPlugin({
         logo: 'public/favicon.jpg',
