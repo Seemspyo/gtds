@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 12px 0 rgba(#000000, 0.6);
+  border: {
+    left: solid 1px $brown-03;
+    right: solid 1px $brown-03;
+  }
+
+  .backgroundImage {
+    object-fit: contain;
+    object-position: top center;
+    width: 100%;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    width: 100%;
+    z-index: 9;
+    max-width: inherit;
+
+    .title {
+      @extend %typo-01;
+
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 6px 0;
+      font: {
+        size: 20px;
+        weight: 700;
+      }
+
+      .titleIcon {
+        height: 32px;
+        margin-right: 0.4em;
+      }
+    }
+
+    .menuButton {
+      margin-left: auto;
+      font: {
+        size: 18px;
+        weight: 700;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    background-color: $brown-01;
+    box-shadow: 0 -6px 5px 0 rgba(#000000, 0.6);
+    z-index: 1;
+    padding: 32px;
+  }
+}

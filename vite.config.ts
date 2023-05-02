@@ -14,28 +14,41 @@ import createTsconfigPathsPluin from 'vite-tsconfig-paths'
 export default defineConfig(({ mode }) => {
   const envDir = resolve(__dirname, 'env')
   const env = loadEnv(mode, envDir)
+  const isDev = env.VITE_USER_NODE_ENV === 'development'
 
   return {
-    mode:
-      env.VITE_USER_NODE_ENV === 'development' ? 'development' : 'production',
+    mode: isDev ? 'development' : 'production',
     base: env.VITE_APP_BASE_PATH,
     envDir,
-    publicDir: 'none',
+    publicDir: 'public/resources',
     build: {
       target: 'es2019',
       outDir: 'dist',
       emptyOutDir: true,
+    },
+    resolve: {
+      alias: {
+        // for scss import
+        '@': resolve(__dirname, 'src'),
+      },
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/styles/variables.scss";',
+        },
+      },
     },
     plugins: [
       createEslintPlugin(),
       createTsconfigPathsPluin(),
       createReactPlugin(),
       createHtmlPlugin({
-        entry: resolve(__dirname, 'src/main.tsx'),
+        entry: isDev ? 'src/main.tsx' : resolve(__dirname, 'src/main.tsx'),
         template: 'public/index.html',
         inject: {
           data: {
-            title: '가디언테일즈 Discovery 길드',
+            title: '가디언 테일즈 Discovery 길드',
           },
         },
       }),

@@ -1,0 +1,44 @@
+$brown-01: #161310;
+$brown-02: #0e0c0a;
+$brown-03: #302a1b;
+$brown-04: #231413;
+$text-01: #9f998c;
+$text-02: #161310;
+$text-03: skyblue;
+
+%typo-01 {
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-01;
+}
+
+%typo-02 {
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-02;
+}
+
+%typo-03 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+%typo-04 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-text-stroke: 1px $brown-02;
+}
+
+%typo-05 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d8d8d8;
+}
+
+%typo-06 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #d8d8d8;
+}

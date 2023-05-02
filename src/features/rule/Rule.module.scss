@@ -1,0 +1,25 @@
+.mainTitle {
+  @extend %typo-05;
+
+  padding: 12px 0;
+}
+
+.title {
+  @extend %typo-06;
+
+  padding: 12px 0;
+}
+
+.ruleList {
+  @extend %typo-01;
+
+  padding-left: 32px;
+
+  li {
+    padding: 6px 0;
+
+    b {
+      color: $text-03;
+    }
+  }
+}
