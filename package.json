@@ -1,18 +1,18 @@
 {
   "name": "gtds",
-  "description": "가디언테일즈 Discovery 길드 홈페이지",
+  "description": "가디언 테일즈 Discovery 길드 홈페이지",
   "private": true,
   "scripts": {
     "prepare": "husky install",
     "dev": "vite --mode development",
     "build": "tsc && vite build --mode production",
-    "preview": "npm run build && vite preview"
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Seemspyo/gtds.git"
   },
-  "license": "MIT",
   "homepage": "https://gtds.online",
   "dependencies": {
     "chart.js": "^4.3.0",
