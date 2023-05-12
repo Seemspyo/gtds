@@ -12,6 +12,21 @@ const RecentRaidRank: FC = () => {
 
   const rankDiff =
     recentRaid && lastRaid ? lastRaid.rank - recentRaid.rank : null
+  const getRankSign = () => {
+    if (rankDiff === null) {
+      return ''
+    }
+
+    if (rankDiff === 0) {
+      return '-'
+    }
+
+    if (rankDiff < 0) {
+      return '▾'
+    }
+
+    return '▴'
+  }
 
   return (
     <div className={styles.container}>
@@ -30,11 +45,9 @@ const RecentRaidRank: FC = () => {
           <span className={styles.contentText}>
             {recentRaid.rank}위
             {isNumber(rankDiff) &&
-              (rankDiff === 0
-                ? '(-)'
-                : `(${Intl.NumberFormat('ko-KR', {
-                    signDisplay: 'exceptZero',
-                  }).format(rankDiff)})`)}
+              `(${getRankSign()}${Intl.NumberFormat('ko-KR', {
+                signDisplay: 'never',
+              }).format(rankDiff)})`}
           </span>
         </div>
       )}
