@@ -15,8 +15,8 @@ export const useVacation = () => {
   const raidAttendanceListQuery = useRaidAttendanceListQuery()
 
   const isLoading =
-    activeMemberListQuery.isFetching &&
-    raidHistoryListQuery.isFetching &&
+    activeMemberListQuery.isFetching ||
+    raidHistoryListQuery.isFetching ||
     raidAttendanceListQuery.isFetching
 
   const { getVacationEndDate, isValidVacation } = useVacationCalculation()

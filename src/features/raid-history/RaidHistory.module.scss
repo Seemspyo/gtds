@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-height: 240px;
   position: relative;
 
   .mainTitle {
@@ -49,12 +50,16 @@
     display: block;
     margin-top: 12px;
     font-size: 12px;
-    color: $brown-03;
+    color: $text-01;
     line-height: 160%;
+    white-space: wrap;
 
     b {
       color: $text-01;
-      font-weight: 500;
+      font: {
+        size: 14px;
+        weight: 500;
+      }
     }
   }
 }
