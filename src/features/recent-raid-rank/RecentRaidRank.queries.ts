@@ -6,6 +6,10 @@ export const useRecentRaidHistoryQuery = () => {
   return useQuery({
     queryKey: ['getRaidHistories'],
     queryFn: getRaidHistories,
-    select: (data) => data.sort((a, b) => b.no.localeCompare(a.no)).at(0),
+    select: (data) => {
+      const sortedData = data.sort((a, b) => b.no.localeCompare(a.no))
+
+      return [sortedData.at(0), sortedData.at(1)] as const
+    },
   })
 }

@@ -23,17 +23,22 @@ const Vacation: FC = () => {
             src="assets/images/reward.gif"
             alt="reward"
           />
-          <div className={styles.recentAttendanceContent}>
-            <h4 className={styles.contentTitle}>
-              시즌 {recentRaidHistoryWithPerfectAttendanceMember.raidNo} -{' '}
-              {recentRaidHistoryWithPerfectAttendanceMember.raidName} 개근맨
-            </h4>
-            <div className={styles.contentList}>
-              {recentRaidHistoryWithPerfectAttendanceMember.perfectAttendanceMembers
-                .sort((a, b) => a.nickname.localeCompare(b.nickname))
-                .map(({ uid, nickname }) => (
-                  <Box key={uid}>👍{nickname}</Box>
-                ))}
+          <div className={styles.recentAttendanceContentWrapper}>
+            <div className={styles.recentAttendanceContent}>
+              <Box>
+                <h4 className={styles.contentTitle}>
+                  🏆 시즌 {recentRaidHistoryWithPerfectAttendanceMember.raidNo}{' '}
+                  - {recentRaidHistoryWithPerfectAttendanceMember.raidName}{' '}
+                  개근맨
+                </h4>
+              </Box>
+              <div className={styles.contentList}>
+                {recentRaidHistoryWithPerfectAttendanceMember.perfectAttendanceMembers
+                  .sort((a, b) => a.nickname.localeCompare(b.nickname))
+                  .map(({ uid, nickname }) => (
+                    <Box key={uid}>🎖️{nickname}</Box>
+                  ))}
+              </div>
             </div>
           </div>
         </div>

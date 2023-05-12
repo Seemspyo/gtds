@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-height: 240px;
   position: relative;
 
   .mainTitle {
@@ -23,19 +24,30 @@
       object-fit: contain;
     }
 
-    .recentAttendanceContent {
+    .recentAttendanceContentWrapper {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow-y: auto;
+      display: flex;
+    }
+
+    .recentAttendanceContent {
+      margin: auto 0;
+      width: 100%;
+      height: fit-content;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 24px 0;
 
       .contentTitle {
         @extend %typo-06;
+
+        padding: 8px 12px;
       }
 
       .contentList {

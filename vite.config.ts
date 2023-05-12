@@ -1,11 +1,7 @@
 import { resolve } from 'node:path'
 
 import createReactPlugin from '@vitejs/plugin-react'
-import {
-  defineConfig,
-  loadEnv,
-  splitVendorChunkPlugin as createSplitVendorChunkPlugin,
-} from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import createEslintPlugin from 'vite-plugin-eslint'
 import { ViteFaviconsPlugin as createFaviconPlugin } from 'vite-plugin-favicon2'
 import { createHtmlPlugin } from 'vite-plugin-html'
@@ -66,7 +62,6 @@ export default defineConfig(({ mode }) => {
       createFaviconPlugin({
         logo: 'public/favicon.jpg',
       }),
-      createSplitVendorChunkPlugin(),
     ],
   }
 })
