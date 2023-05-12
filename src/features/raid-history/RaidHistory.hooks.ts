@@ -31,17 +31,15 @@ export const useRaidHistory = () => {
 
     return raidAttendanceList
       .map(({ raidNo, raidEndedAt, perfectAttendanceMemberUids }) => {
-        const { name: raidName } = raidMap[raidNo]
-
         return {
           raidNo,
-          raidName,
+          raidName: raidMap[raidNo]?.name ?? '',
           raidEndedAt,
           vacationEndedAt:
             getVacationEndDate(raidEndedAt).toFormat('yyyy/MM/dd'),
-          perfectAttendanceMembers: perfectAttendanceMemberUids.map(
-            (memberUid) => memberMap[memberUid]
-          ),
+          perfectAttendanceMembers: perfectAttendanceMemberUids
+            .map((memberUid) => memberMap[memberUid])
+            .filter((member) => !!member),
         }
       })
       .sort((a, b) => b.raidNo.localeCompare(a.raidNo))

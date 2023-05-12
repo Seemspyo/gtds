@@ -44,12 +44,12 @@ export const useVacation = () => {
     return activeMemberList
       .map((member) => ({
         ...member,
-        availableVacationCount: memberVacationCountMap[member.uid],
+        availableVacationCount: memberVacationCountMap[member.uid] ?? 0,
         // TODO
         usedVacationCount: 0,
       }))
       .sort((a, b) => a.nickname.localeCompare(b.nickname))
-  }, [activeMemberListQuery.data, raidHistoryListQuery.data])
+  }, [activeMemberListQuery.data, raidAttendanceListQuery.data])
 
   const recentRaidHistoryWithPerfectAttendanceMember = useMemo(() => {
     const { data: activeMemberList = [] } = activeMemberListQuery
