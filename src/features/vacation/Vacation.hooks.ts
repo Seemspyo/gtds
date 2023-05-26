@@ -1,4 +1,4 @@
-import { isNil, keyBy } from 'lodash-es'
+import { isNil } from 'lodash-es'
 import { useMemo } from 'react'
 
 import { useVacationCalculation } from '@/hooks/useVacationCalculation'
@@ -9,7 +9,7 @@ import {
   useRaidHistoryListQuery,
 } from './Vacation.queries'
 
-export const useVacation = () => {
+export const useMemberListWithVacationCount = () => {
   const activeMemberListQuery = useActiveMemberListQuery()
   const raidHistoryListQuery = useRaidHistoryListQuery()
   const raidAttendanceListQuery = useRaidAttendanceListQuery()
@@ -19,7 +19,7 @@ export const useVacation = () => {
     raidHistoryListQuery.isFetching ||
     raidAttendanceListQuery.isFetching
 
-  const { getVacationEndDate, isValidVacation } = useVacationCalculation()
+  const { isValidVacation } = useVacationCalculation()
 
   const memberWithVacationCountList = useMemo(() => {
     const { data: activeMemberList = [] } = activeMemberListQuery
@@ -51,46 +51,8 @@ export const useVacation = () => {
       .sort((a, b) => a.nickname.localeCompare(b.nickname))
   }, [activeMemberListQuery.data, raidAttendanceListQuery.data])
 
-  const recentRaidHistoryWithPerfectAttendanceMember = useMemo(() => {
-    const { data: activeMemberList = [] } = activeMemberListQuery
-    const { data: raidHistoryList = [] } = raidHistoryListQuery
-    const { data: raidAttendanceList = [] } = raidAttendanceListQuery
-
-    const memberMap = keyBy(activeMemberList, 'uid')
-    const raidAttendance = raidAttendanceList
-      .sort((a, b) => b.raidNo.localeCompare(a.raidNo))
-      .at(0)
-
-    if (!raidAttendance) {
-      return null
-    }
-
-    const raid = raidHistoryList.find(({ no }) => raidAttendance.raidNo === no)
-
-    if (!raid) {
-      return null
-    }
-
-    return {
-      raidNo: raid.no,
-      raidName: raid.name,
-      raidEndedAt: raidAttendance.raidEndedAt,
-      vacationEndedAt: getVacationEndDate(raidAttendance.raidEndedAt).toFormat(
-        'yyyy/MM/dd'
-      ),
-      perfectAttendanceMembers: raidAttendance.perfectAttendanceMemberUids
-        .map((memberUid) => memberMap[memberUid])
-        .filter((member) => !!member),
-    }
-  }, [
-    activeMemberListQuery.data,
-    raidAttendanceListQuery.data,
-    raidHistoryListQuery.data,
-  ])
-
   return {
     isLoading,
     memberWithVacationCountList,
-    recentRaidHistoryWithPerfectAttendanceMember,
   }
 }

@@ -1,48 +1,19 @@
 import { FC } from 'react'
 
-import { Box } from '@/components/box'
 import { Spinner } from '@/components/spinner'
+import { RecentPerfectAttendance } from '@/features/recent-perfect-attendance'
 
-import { useVacation } from './Vacation.hooks'
+import { useMemberListWithVacationCount } from './Vacation.hooks'
 import styles from './Vacation.module.scss'
 
 const Vacation: FC = () => {
-  const {
-    isLoading,
-    memberWithVacationCountList,
-    recentRaidHistoryWithPerfectAttendanceMember,
-  } = useVacation()
+  const { isLoading, memberWithVacationCountList } =
+    useMemberListWithVacationCount()
 
   return (
     <div className={styles.container}>
       {isLoading && <Spinner />}
-      {recentRaidHistoryWithPerfectAttendanceMember && (
-        <div className={styles.recentAttendance}>
-          <img
-            className={styles.backgroundImage}
-            src="assets/images/reward.gif"
-            alt="reward"
-          />
-          <div className={styles.recentAttendanceContentWrapper}>
-            <div className={styles.recentAttendanceContent}>
-              <Box>
-                <h4 className={styles.contentTitle}>
-                  🏆 시즌 {recentRaidHistoryWithPerfectAttendanceMember.raidNo}{' '}
-                  - {recentRaidHistoryWithPerfectAttendanceMember.raidName}{' '}
-                  개근맨
-                </h4>
-              </Box>
-              <div className={styles.contentList}>
-                {recentRaidHistoryWithPerfectAttendanceMember.perfectAttendanceMembers
-                  .sort((a, b) => a.nickname.localeCompare(b.nickname))
-                  .map(({ uid, nickname }) => (
-                    <Box key={uid}>🎖️{nickname}</Box>
-                  ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      <RecentPerfectAttendance />
       <h3 className={styles.mainTitle}>🤑 휴가 현황표</h3>
       <ul className={styles.vacationList}>
         {memberWithVacationCountList.map((data) => (

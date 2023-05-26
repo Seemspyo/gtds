@@ -26,8 +26,8 @@
   {
     "uid": "HLP5L",
     "nickname": "김타루",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-05-16"
   },
   {
     "uid": "R2VN1",
@@ -86,6 +86,12 @@
   {
     "uid": "3CLAL",
     "nickname": "새우",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "D17PL",
+    "nickname": "수련",
     "status": "ACTIVE",
     "inactivatedAt": null
   },
