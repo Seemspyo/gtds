@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import { ContentBox } from '@/components/box'
 import { Spinner } from '@/components/spinner'
+import { RecentPerfectAttendance } from '@/features/recent-perfect-attendance'
 
 import { useRaidHistory } from './RaidHistory.hooks'
 import styles from './RaidHistory.module.scss'
@@ -12,6 +13,7 @@ const RaidHistory: FC = () => {
   return (
     <div className={styles.container}>
       {isLoading && <Spinner />}
+      <RecentPerfectAttendance />
       <h3 className={styles.mainTitle}>🎲 레이드 일지</h3>
       <ul className={styles.raidList}>
         {raidHistoryList.map((history) => (
