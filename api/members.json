@@ -104,8 +104,8 @@
   {
     "uid": "7RG8X",
     "nickname": "아이읔",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-06-01"
   },
   {
     "uid": "7B01X",
@@ -260,6 +260,12 @@
   {
     "uid": "LMMWX",
     "nickname": "whiteblu",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "734X1",
+    "nickname": "Moshy",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
