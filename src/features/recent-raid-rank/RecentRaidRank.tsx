@@ -45,9 +45,13 @@ const RecentRaidRank: FC = () => {
           <span className={styles.contentText}>
             {recentRaid.rank}위
             {isNumber(rankDiff) &&
-              `(${getRankSign()}${Intl.NumberFormat('ko-KR', {
-                signDisplay: 'never',
-              }).format(rankDiff)})`}
+              `(${getRankSign()}${
+                rankDiff
+                  ? Intl.NumberFormat('ko-KR', {
+                      signDisplay: 'never',
+                    }).format(rankDiff)
+                  : ''
+              })`}
           </span>
         </div>
       )}
