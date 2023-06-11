@@ -8,7 +8,7 @@ import { RouterProvider } from 'react-router-dom'
 import { router } from '@/router'
 
 const initialize = () => {
-  const rootElement = document.getElementById('app')
+  const rootElement = document.getElementById('app2')
 
   if (!rootElement) {
     return
