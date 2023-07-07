@@ -72,6 +72,12 @@
     "inactivatedAt": null
   },
   {
+    "uid": "QKXCX",
+    "nickname": "부처",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
     "uid": "3HVEL",
     "nickname": "분홍신",
     "status": "RESIGNED",
@@ -86,8 +92,8 @@
   {
     "uid": "3CLAL",
     "nickname": "새우",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-06-25"
   },
   {
     "uid": "D17PL",
