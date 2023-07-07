@@ -92,8 +92,8 @@
   {
     "uid": "3CLAL",
     "nickname": "새우",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2023-06-25"
   },
   {
     "uid": "D17PL",
@@ -146,8 +146,8 @@
   {
     "uid": "40HKX",
     "nickname": "우주",
-    "status": "KICKED_ABANDON_DUTY",
-    "inactivatedAt": "2023-06-25"
+    "status": "ACTIVE",
+    "inactivatedAt": null
   },
   {
     "uid": "WPEN1",
