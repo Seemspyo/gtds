@@ -90,6 +90,12 @@
     "inactivatedAt": "2023-02-05"
   },
   {
+    "uid": "HG0N1",
+    "nickname": "산소",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
     "uid": "3CLAL",
     "nickname": "새우",
     "status": "KICKED_ABANDON_DUTY",
