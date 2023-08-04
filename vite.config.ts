@@ -63,5 +63,8 @@ export default defineConfig(({ mode }) => {
         logo: 'public/favicon.jpg',
       }),
     ],
+    server: {
+      open: true,
+    },
   }
 })
