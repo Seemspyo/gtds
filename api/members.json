@@ -66,6 +66,12 @@
     "inactivatedAt": null
   },
   {
+    "uid": "340TL",
+    "nickname": "바람",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
     "uid": "73V71",
     "nickname": "바스켓맨",
     "status": "ACTIVE",
@@ -92,8 +98,8 @@
   {
     "uid": "HG0N1",
     "nickname": "산소",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "KICKED_ABSCENT",
+    "inactivatedAt": "2023-08-14"
   },
   {
     "uid": "3CLAL",
