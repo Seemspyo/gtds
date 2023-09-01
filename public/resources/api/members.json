@@ -50,8 +50,8 @@
   {
     "uid": "3HVUL",
     "nickname": "륨키밀",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-08-21"
   },
   {
     "uid": "6VYDB",
@@ -74,6 +74,12 @@
   {
     "uid": "73V71",
     "nickname": "바스켓맨",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "N3VA1",
+    "nickname": "백곰",
     "status": "ACTIVE",
     "inactivatedAt": null
   },
