@@ -68,8 +68,8 @@
   {
     "uid": "340TL",
     "nickname": "바람",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "KICKED_ABSCENT",
+    "inactivatedAt": "2023-11-03"
   },
   {
     "uid": "73V71",
@@ -86,8 +86,8 @@
   {
     "uid": "QKXCX",
     "nickname": "부처",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2023-10-30"
   },
   {
     "uid": "3HVEL",
@@ -290,6 +290,18 @@
   {
     "uid": "734X1",
     "nickname": "Moshy",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "X0WNC",
+    "nickname": "당돌한호박",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "73NML",
+    "nickname": "과즙이",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
