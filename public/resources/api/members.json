@@ -302,7 +302,7 @@
   {
     "uid": "73NML",
     "nickname": "과즙이",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "KICKED_ABANDON_DUTY",
+    "inactivatedAt": "2024-01-09"
   }
 ]
