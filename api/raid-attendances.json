@@ -1,5 +1,29 @@
 [
   {
+    "raidNo": "68",
+    "raidEndedAt": "2024/02/16",
+    "perfectAttendanceMemberUids": [
+      "6VYDB",
+      "P6MRL",
+      "L24XL",
+      "4T1GB",
+      "WPEN1",
+      "7B01X",
+      "W4NQL",
+      "D17PL",
+      "MPMBX",
+      "GPTPL",
+      "N3VA1",
+      "WPM5L",
+      "1NHGX",
+      "X0WNC",
+      "AU67L",
+      "R2VN1",
+      "QXHUX",
+      "40HKX"
+    ]
+  },
+  {
     "raidNo": "67",
     "raidEndedAt": "2024/02/02",
     "perfectAttendanceMemberUids": [
