@@ -278,8 +278,8 @@
   {
     "uid": "1NHGX",
     "nickname": "SummerYUI",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2024-03-14"
   },
   {
     "uid": "LMMWX",
@@ -314,6 +314,12 @@
   {
     "uid": "8HBYB",
     "nickname": "헤실기사",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "CH4KL",
+    "nickname": "알리",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
