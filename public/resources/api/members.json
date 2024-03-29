@@ -314,12 +314,24 @@
   {
     "uid": "8HBYB",
     "nickname": "헤실기사",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2024-03-21"
   },
   {
     "uid": "CH4KL",
     "nickname": "알리",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "1MNLX",
+    "nickname": "맘말",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "34651",
+    "nickname": "라드시아",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
