@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Seemspyo/gtds.git"
   },
-  "homepage": "https://gtds.online",
+  "homepage": "https://gtds.site",
   "dependencies": {
     "chart.js": "^4.3.0",
     "clsx": "^1.2.1",
