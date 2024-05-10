@@ -296,8 +296,8 @@
   {
     "uid": "X0WNC",
     "nickname": "당돌한호박",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2024-05-02"
   },
   {
     "uid": "73NML",
@@ -332,6 +332,12 @@
   {
     "uid": "34651",
     "nickname": "라드시아",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "97YLL",
+    "nickname": "창배",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
