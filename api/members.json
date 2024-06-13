@@ -176,8 +176,8 @@
   {
     "uid": "AU67L",
     "nickname": "일큐",
-    "status": "ACTIVE",
-    "inactivatedAt": null
+    "status": "RESIGNED",
+    "inactivatedAt": "2024-06-10"
   },
   {
     "uid": "ULX0X",
@@ -338,6 +338,18 @@
   {
     "uid": "97YLL",
     "nickname": "창배",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "H0W48",
+    "nickname": "빙봉",
+    "status": "ACTIVE",
+    "inactivatedAt": null
+  },
+  {
+    "uid": "2VPYX",
+    "nickname": "용비",
     "status": "ACTIVE",
     "inactivatedAt": null
   }
